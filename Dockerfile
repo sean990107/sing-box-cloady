@@ -6,7 +6,7 @@
 
 FROM alpine:latest
 
-RUN apk add --no-cache ca-certificates curl
+RUN apk add --no-cache ca-certificates curl gcompat
 
 ARG SING_BOX_VERSION=1.14.4
 RUN curl -fsSL -o /tmp/sing-box.tar.gz \
